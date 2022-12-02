@@ -3,7 +3,7 @@
 site: [create-react-app](create-react-app.dev)
 
 - `npx create-react-app nome-do-projeto`
-  > always get the latest version of the app
+  - always get the latest version of the app
 
 ### initializing server
 
