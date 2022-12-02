@@ -1,15 +1,11 @@
-## creating react app
+## Creating react app
 
 site: [create-react-app](create-react-app.dev)
 
 - `npx create-react-app nome-do-projeto`
   - always get the latest version of the app
 
-### initializing server
-
-`yarn start`
-
-## yarn packages needed
+## Yarn packages
 
 - yarn
 
@@ -28,3 +24,7 @@ site: [create-react-app](create-react-app.dev)
   - [Styled Components](https://styled-components.com/docs/basics#installation)
 
   - install: `yarn add styled-components`
+
+- ### initializing server
+
+  - `yarn start`
