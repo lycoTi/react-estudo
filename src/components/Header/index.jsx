@@ -1,6 +1,7 @@
 import React from 'react'
-// import logo from '../../assets/logo-dio.png'
-import {Button} from '../Button'
+import logo from '../../assets/logo-dio.png'
+import { Button } from '../Button'
+
 import {
     Container,
     Row,
@@ -16,12 +17,17 @@ const Header = () => {
     <Wrapper>
       <Container>
         <Row>
-          {/* <img src={logo} alt="Logo da dio" /> */}
+          <img src={logo} alt="Logo da dio" />
           <BuscarInputContainer>
             <Input placeholder='Buscar...' />
           </BuscarInputContainer>
           <Menu>Live Code</Menu>
           <Menu>Global</Menu>
+        </Row>
+        <Row>
+          <MenuRight href='#'>Home</MenuRight>
+            <Button title="Entrar" variant="primary"/>
+            <Button title="Cadastrar" variant="primary" />
         </Row>
       </Container>
     </Wrapper>
