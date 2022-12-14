@@ -1,19 +1,20 @@
-import React from 'react'
-import logo from '../../assets/logo-dio.png'
+import * as React from 'react'
+import logo from '../../assets/logo-dio.png';
 import { Button } from '../Button'
 
 import {
-    Container,
-    Row,
-    Wrapper,
-    BuscarInputContainer,
-    Menu,
-    MenuRight,
-    Input,
-    UserPicture
+  Container,
+  Row,
+  Wrapper,
+  BuscarInputContainer,
+  Menu,
+  MenuRight,
+  Input,
+  UserPicture
 } from './styles'
+import { IHeader } from './types'
 
-const Header = ({autenticado}) => {
+const Header = ({ autenticado }: IHeader) => {
   return (
     <Wrapper>
       <Container>
@@ -21,23 +22,23 @@ const Header = ({autenticado}) => {
           <img src={logo} alt="Logo da dio" />
           {autenticado ? (
             <>
-            <BuscarInputContainer>
-              <Input placeholder='Buscar...' />
-            </BuscarInputContainer>
-            <Menu>Live Code</Menu>
-            <Menu>Global</Menu>
-          </>) : null}
-          
+              <BuscarInputContainer>
+                <Input placeholder='Buscar...' />
+              </BuscarInputContainer>
+              <Menu>Live Code</Menu>
+              <Menu>Global</Menu>
+            </>) : null}
+
         </Row>
         <Row>
           {autenticado ? (
             <UserPicture src='https://avatars.githubusercontent.com/u/91505691?s=96&v=4' />
           ) : (<>
             <MenuRight href='/#'>Home</MenuRight>
-            <Button title="Entrar" variant="primary"/>
+            <Button title="Entrar" variant="primary" />
             <Button title="Cadastrar" variant="primary" />
           </>)}
-          
+
         </Row>
       </Container>
     </Wrapper>
